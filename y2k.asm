@@ -1,6 +1,6 @@
 ; i was bored so i did a thing, try it out
 ; assemble with: nasm -f bin y2k.asm -o y2k.com
-; dosbox is preferred but you can use any dos emulator idc
+; dosbox is preferred but you can use any dos emulator, just follow the earlier instructions and you will be fine
 
 org 0x100        ; .COM file starts at 0x100
 

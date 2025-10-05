@@ -13,11 +13,11 @@ start:
     mov ah, 0x00
     int 0x10          ; Reset video mode (clear screen)
 
-    ; Print the Y2K joke
+    ; release the dogs of waaarrrrr aka the y2k joke
     mov dx, y2k_msg
     call print_string
 
-    ; Wait for a keypress
+    ; keypress wait
     mov ah, 0x00
     int 0x16
 
@@ -26,7 +26,7 @@ start:
     int 0x21
 
 ; ------------------------
-; Subroutine to print a string at DS:DX
+; subroutine to print a string at DS:DX
 ; ------------------------
 print_string:
     push ax
@@ -43,7 +43,7 @@ print_string:
     ret
 
 ; ------------------------
-; The Y2K joke message
+; here it comes 
 ; ------------------------
 y2k_msg db 13, 10, '>> SYSTEM DATE: JAN 1, 1900', 13, 10
         db '>> WELCOME TO WINDOWS -99', 13, 10
